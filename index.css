@@ -1,0 +1,161 @@
+:root{
+
+    --primary-color:hsl(14, 45%, 36%);
+    --second-color:hsl(12, 11%, 83%);
+    --main-margin: 15px 0;
+    --radius:1.2em;
+}
+
+body{
+    color: hsl(45, 4%, 18%);
+    background-color: hsl(39, 59%, 82%);
+
+}
+
+
+.continer{
+
+    max-width: 700px;
+    border-radius: var(--radius);
+    padding: 30px;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.omelette{
+    width: 100%;
+border-radius: var(--radius);
+
+
+}
+
+
+@media (max-width:775px){
+
+body{
+
+    margin: 0;
+}
+.continer {
+
+    padding: 0px;
+    border-radius: 0;
+}
+
+.omelette{
+
+    border-radius: 0px;
+}
+
+.mobile-continer{
+
+    padding: 0  30px;
+}
+
+
+}
+
+
+
+h1{
+
+    font-size: 2.5em;
+
+}
+
+
+
+.Preparation-continer{
+
+background-color:hsl(330, 100%, 98%) ;
+padding: 10px 20px;
+border-radius: var(--radius);
+
+}
+
+.Preparation-continer h2{
+
+    color:hsl(332, 51%, 32%) ;
+
+}
+
+.Preparation-continer ul li{
+
+    margin: var(--main-margin);
+
+
+}
+
+.Preparation-continer ul li::marker{
+
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients{
+
+    color: var(--primary-color);
+
+}
+
+
+
+.ingredients + ul li{
+
+    margin: var(--main-margin);
+
+}
+
+.ingredients + ul li::marker{
+
+    color: var(--primary-color);
+}
+
+.instructions{
+
+    border-top: 1px solid var(--second-color);
+    border-bottom:1px solid var(--second-color) ;
+}
+
+
+.instructions > h2{
+    color: var(--primary-color);
+
+}
+
+.instructions >ol li{
+
+    margin: var(--main-margin);
+}
+
+.instructions >ol li::marker{
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.nutrition{
+
+    color: var(--primary-color);
+}
+
+.vag{
+
+    border-bottom: 1px solid var(--second-color);
+    padding: 15px 35px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.vag :last-child{
+
+    color: var(--primary-color);
+}
+
+
+
+.vag-without-border{
+
+    border: none;
+}
+
+/*  */
